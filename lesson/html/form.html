@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Muốn auto focus: để for = id -->
+    <h3>Nhập thông tin của bạn</h3>
+    <form action="" method="post">
+        <label for="name">Tên:</label><br>
+        <input type="text" name="Tên" id="name" placeholder="Nhập tên của bạn"><br>
+        <label for="password">Mật khẩu:</label><br>
+        <input type="password" name="mật khẩu" id="password" placeholder="Nhập mật khẩu của bạn"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="Nhập email của bạn"><br>
+        <label for="number">Số lượng:</label><br>
+        <input type="number" name="amount" id="number" min="1" max="10" placeholder="Nhập số lượng"><br>
+        <label for="date" >Ngày:</label><br>
+        <input type="date" name="date" id="date"><br>
+        <label for="city">Thành phố:</label><br>
+        <select name="city" id="city">
+            <option value="hanoi">Hà Nội</option>
+            <option value="hcm">Hồ Chí Minh</option>
+            <option value="danang">Đà Nẵng</option>
+            <option value="haiphong">Hải Phòng</option>
+            <option value="cantho">Cần Thơ</option>
+        </select><br>
+
+        <label>Giới tính:</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Nữ</label><br><br>
+        
+        <label>Sở thích</label><br>
+        <input type="checkbox" name="hobby" id="reading" value="reading">
+        <label for="reading">Đọc sách</label>
+        <input type="checkbox" name="hobby" id="traveling" value="traveling">   
+        <label for="traveling">Du lịch</label>
+        <input type="checkbox" name="hobby" id="sports" value="sports">
+        <label for="sports">Thể thao</label><br><br>
+
+        <label for="message">Lời nhắn:</label><br>
+        <textarea name="message" id="message" rows="4" cols="50" placeholder="Nhập lời nhắn của bạn"></textarea><br>
+
+        <!-- Dữ liệu sẽ được gửi ngầm lên server này -->
+        <input type="hidden" name="redect-to" value="https://www.google.com/">
+
+        <!-- <input type="submit" value="Gửi"> -->
+         <button type="submit">
+            <img src="img/submit.png" alt="sent" width="20" height="20"/>Gửi
+        </button>
+    </form>
+</body>
+</html>
